@@ -87,7 +87,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
         if (bleDevice == null)
             finish();
         ObserverManager.getInstance().addObserver(this);
-        setTitle("TAWA智能车载冰箱");
+        setTitle("Smart车载冰箱");
         initView();
         initListener();
         initTask();

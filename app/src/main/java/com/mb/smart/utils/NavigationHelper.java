@@ -15,13 +15,13 @@ import java.io.File;
  */
 public class NavigationHelper {
 
-	private final static String JDShopId = "74489";
+	private final static String JDShopId = "1000103102";
 	private final static String JD_URL_WEB = "https://mall.jd.com/index-1000103102.html";
 	private final static String JD_URL_NATIVE ="openApp.jdMobile://virtual?params={\"category\":\"jump\",\"des\":\"jshopMain\",\"shopId\":\""+JDShopId+"\",\"sourceType\":\"M_sourceFrom\",\"sourceValue\":\"dp\"}";
 
 
-	private final static String TMShopId = "107412780";
-	private final static String TM_URL_WEB = "https://qixuanqcyp.tmall.com/?spm=a220o.1000855.w5001-17297607168.3.f7a21c8cWFM2AP&scene=taobao_shop";
+	private final static String TMShopId = "226688697";
+	private final static String TM_URL_WEB = "http://yukhj.com/s/ZFF6L?tm=ae4c6e";
 	private final static String TM_URL_NATIVE = "tmall://page.tm/shop?shopId="+TMShopId;
 
 	private final static String mJDMall = "com.jingdong.app.mall";
