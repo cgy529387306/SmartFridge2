@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Smart车载冰箱</string>
+    <string name="input_phone">输入手机号码</string>
+    <string name="input_pwd">输入登录密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册新用户</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="get_valid_code">获取验证码</string>
+    <string name="reget_after_seconds">秒后重新获取</string>
+    <string name="input_correct_tel">请输入手机号码</string>
+    <string name="send_success">发送成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="modify_success">修改成功</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_to_bind_tip">您是第一次登陆，请先绑定手机号</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_valid_code">请输入验证码</string>
+    <string name="tel_error">手机号码错误</string>
+    <string name="password_error">密码格式错误</string>
+    <string name="about">Smart车载冰箱是依托自有智慧车载冰箱工厂，研发的专属APP，我们立志为大家打造全场景解决方案。成功都是一步步奋斗过来的。亲爱的您，无论您用在宿舍、公寓、自驾出行、卡车，我们都竭力为您做的更多。
+        \n\n我们立志把市场的高端品，普及做成市场的通用品，在不断提升品质的同时，我们认为厚道的价格反而是我们不断追求目标的底线。我们跟大家永远站在一起，一起来为快乐助力！
+        \n \n快乐，就是一瞬间，也是长久间。Smart车载冰箱它就在那里！。
+    </string>
+    <string name="tmall">TAWA\n天猫旗舰店</string>
+    <string name="jd">TAWA\n京东旗舰店</string>
+    <string name="aboutus">关于我们</string>
+    <string name="dialog_positive">确 定</string>
+    <string name="dialog_negative">取 消</string>
+</resources>

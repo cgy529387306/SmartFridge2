@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 基本颜色 -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#88000000</color>
+    <color name="pressed">#33000000</color>
+
+    <color name="colorBlack">#ff000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorHintGray">#ffa5a5a5</color>
+    <color name="colorGray">#ffe5e5e5</color>
+    <color name="colorGreen">#ff99cc33</color>
+    <color name="colorViewBg">#ffeeeeee</color>
+    <color name="colorBlueDark">#2743FF</color>
+    <color name="colorBlue">#009EFF</color>
+    <color name="colorItemBlue">#ff00b6ce</color>
+    <color name="colorItBlue">#ff00c6ce</color>
+    <color name="colorLightBlue">#00caf2</color>
+    <color name="colorItemGreen">#ffb0d02d</color>
+    <color name="colorOrange">#ffec6941</color>
+    <color name="colorViewGray">#ffdcdcdc</color>
+    <color name="colorHint">#ffaeaeae</color>
+    <color name="colorTextGray">#ff999999</color>
+    <color name="colorBackground">#fff7f7f8</color>
+    <color name="colorBounder">#4B4D58</color>
+    <!-- 页面背景颜色 -->
+    <color name="background_color">#f7f7f7</color>
+</resources>

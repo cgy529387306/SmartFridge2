@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_background"
+    android:orientation="vertical">
+    <include layout="@layout/base_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_minus"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@mipmap/ic_temperature_circle"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="当前温度"
+                android:textColor="@color/colorHintGray"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/activity_text_size"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_current_temperature"
+                android:layout_width="match_parent"
+                android:text="12℃"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:textSize="44sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_set_temperature"
+                android:layout_width="match_parent"
+                android:text="设置温度："
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorHintGray"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/activity_text_size"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ic_plus"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tempC"
+            android:layout_width="wrap_content"
+            android:text="℃"
+            android:textColor="@color/colorGray"
+            android:padding="8dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_tempF"
+            android:layout_width="wrap_content"
+            android:text="℉"
+            android:layout_marginLeft="70dp"
+            android:padding="8dp"
+            android:textColor="@color/colorBounder"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lin_energy"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/custom_bounder_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前模式"
+                android:textColor="@color/colorBounder"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/iv_energy_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_energy_saving"/>
+            <TextView
+                android:id="@+id/tv_energy_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="节能"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_battery"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/custom_bounder_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电池保护档"
+                android:textColor="@color/colorBounder"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/iv_battery_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_battery_middle"/>
+            <TextView
+                android:id="@+id/tv_battery_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="中"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_power"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_power_on"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_battery_voltage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="电池电压： 11.86"
+            android:textColor="@color/colorBounder"
+            android:textSize="@dimen/activity_text_size_small"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_battery_quantity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="电池电量： 100%"
+            android:textColor="@color/colorBounder"
+            android:gravity="right"
+            android:textSize="@dimen/activity_text_size_small"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
