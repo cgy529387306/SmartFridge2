@@ -26,7 +26,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="当前温度"
+                android:text="@string/current_temp"
                 android:textColor="@color/colorHintGray"
                 android:layout_marginTop="50dp"
                 android:gravity="center_horizontal"
@@ -36,7 +36,6 @@
             <TextView
                 android:id="@+id/tv_current_temperature"
                 android:layout_width="match_parent"
-                android:text="12℃"
                 android:gravity="center_horizontal"
                 android:textColor="@color/colorWhite"
                 android:textSize="44sp"
@@ -45,7 +44,7 @@
             <TextView
                 android:id="@+id/tv_set_temperature"
                 android:layout_width="match_parent"
-                android:text="设置温度："
+                android:text="@string/setting_wd"
                 android:gravity="center_horizontal"
                 android:textColor="@color/colorHintGray"
                 android:layout_marginTop="10dp"
@@ -106,7 +105,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="当前模式"
+                android:text="@string/current_mode"
                 android:textColor="@color/colorBounder"
                 android:textSize="14sp"/>
             <ImageView
@@ -120,7 +119,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="节能"
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -135,7 +133,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="电池保护档"
+                android:text="@string/device_battery_state"
                 android:textColor="@color/colorBounder"
                 android:textSize="14sp"/>
             <ImageView
@@ -149,7 +147,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="中"
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -176,7 +173,6 @@
             android:id="@+id/tv_battery_voltage"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="电池电压： 11.86"
             android:textColor="@color/colorBounder"
             android:textSize="@dimen/activity_text_size_small"
             android:layout_height="wrap_content" />
@@ -184,7 +180,6 @@
             android:id="@+id/tv_battery_quantity"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="电池电量： 100%"
             android:textColor="@color/colorBounder"
             android:gravity="right"
             android:textSize="@dimen/activity_text_size_small"

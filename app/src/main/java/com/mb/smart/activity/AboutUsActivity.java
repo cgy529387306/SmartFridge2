@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.mb.smart.R;
 import com.mb.smart.utils.NavigationHelper;
 
+
 /**
  * Created by cgy on 2018/4/19 0019.
  */
@@ -21,7 +22,7 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutus);
-        setTitle("关于我们");
+        setTitle(getString(R.string.aboutus));
         initView();
     }
 
@@ -54,7 +55,7 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
     }
 
 
-    private class myTask extends AsyncTask<Void, Integer, Void> {
+    private class myTask extends AsyncTask<Void, Integer, Void>{
 
         @WorkerThread
         @Override

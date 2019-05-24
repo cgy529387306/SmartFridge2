@@ -36,7 +36,7 @@
                     android:id="@+id/tv_search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="搜索可用设备"
+                    android:text="@string/search_vailable_device"
                     android:textColor="@color/colorBlack"
                     android:textSize="@dimen/activity_text_size_small"/>
                 <ImageView
@@ -72,14 +72,14 @@
                        <TextView
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
-                           android:text="找不到可用设备"
+                           android:text="@string/search_no_device"
                            android:textColor="@color/colorBlack"
                            android:textSize="@dimen/activity_text_size" />
                        <TextView
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:layout_marginTop="6dp"
-                           android:text="请确保您的冰箱已开机，并已将手机靠近冰箱!"
+                           android:text="@string/sure_near"
                            android:textColor="@color/colorHint"
                            android:textSize="@dimen/activity_text_size_low"/>
                    </LinearLayout>
@@ -106,7 +106,7 @@
                       android:layout_width="0dp"
                       android:layout_weight="1"
                       android:layout_height="match_parent"
-                      android:text="取消返回"
+                      android:text="@string/cancel_back"
                       android:gravity="center"
                       android:layout_marginLeft="10dp"
                       android:background="@drawable/shape_cancelback_btn"
@@ -117,7 +117,7 @@
                       android:layout_width="0dp"
                       android:layout_weight="1"
                       android:layout_height="match_parent"
-                      android:text="重新搜索"
+                      android:text="@string/search_again"
                       android:layout_marginLeft="50dp"
                       android:layout_marginRight="10dp"
                       android:gravity="center"
@@ -131,7 +131,7 @@
                   android:layout_height="40dp"
                   android:layout_gravity="center_vertical"
                   android:visibility="gone"
-                  android:text="+ 添加设备"
+                  android:text="@string/add_device"
                   android:layout_marginLeft="10dp"
                   android:layout_marginRight="10dp"
                   android:gravity="center"
@@ -153,7 +153,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="手机蓝牙未开启"
+                android:text="@string/bluettooth_not_open"
                 android:textColor="@color/colorBlack"
                 android:padding="10dp"
                 android:textSize="@dimen/activity_text_size"/>
@@ -165,7 +165,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="请确保已打开手机蓝牙和冰箱!"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/make_sure_open_device"
                 android:textColor="@color/colorHint"
                 android:layout_marginTop="40dp"
                 android:textSize="@dimen/activity_text_size_small"/>
@@ -173,7 +175,7 @@
                 android:id="@+id/tv_openBluetooth"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="开启蓝牙"
+                android:text="@string/open_bluetooth"
                 android:gravity="center"
                 android:padding="10dp"
                 android:layout_marginTop="40dp"

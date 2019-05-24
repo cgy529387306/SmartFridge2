@@ -67,7 +67,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
             super.handleMessage(msg);
             switch (msg.what) {
                 case 1:
-                    Toast.makeText(SmartFridgeActivity.this, "发送成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SmartFridgeActivity.this, R.string.send_success, Toast.LENGTH_SHORT).show();
                     break;
                 case 2:
                     sendMessages(getDataOrder);
@@ -87,7 +87,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
         if (bleDevice == null)
             finish();
         ObserverManager.getInstance().addObserver(this);
-        setTitle("Smart车载冰箱");
+        setTitle(getString(R.string.title_tawa));
         initView();
         initListener();
         initTask();
@@ -270,13 +270,13 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
                 lowV = dataList[12];
                 ivPower.setImageResource(isOpen?R.mipmap.ic_power_on :R.mipmap.ic_power_off);
                 tvCurrentTemp.setText(String.format("%1s%2s",getHexResult(currentTemp), getHexResult(tempUnit)==1?"℉":"℃"));
-                tvSetTemp.setText(String.format("设置温度：%1s%2s", getHexResult(setTemp),getHexResult(tempUnit)==1?"℉":"℃"));
+                tvSetTemp.setText(String.format(getString(R.string.setting_wd), getHexResult(setTemp),getHexResult(tempUnit)==1?"℉":"℃"));
                 tvTempC.setTextColor(getHexResult(tempUnit)==1?getResources().getColor(R.color.colorBounder):getResources().getColor(R.color.colorGray));
                 tvTempF.setTextColor(getHexResult(tempUnit)==1?getResources().getColor(R.color.colorGray):getResources().getColor(R.color.colorBounder));
                 setEnergyState(getHexResult(energyState));
                 setBatteryState(getHexResult(batteryState));
 
-                tvBatteryVoltage.setText(String.format("电池电压：%d.%d",Integer.parseInt(highV,16), Integer.parseInt(lowV,16)));
+                tvBatteryVoltage.setText(String.format(getString(R.string.setting_dcdy),Integer.parseInt(highV,16), Integer.parseInt(lowV,16)));
             }
         }
     }
@@ -312,7 +312,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
      */
     private void setEnergyState(int state){
         ivEnergyState.setImageResource(state==1?R.mipmap.ic_energy_saving:R.mipmap.ic_energy_strength);
-        tvEnergyState.setText(state==1?"节能":"强劲");
+        tvEnergyState.setText(state==1?getString(R.string.device_jn):getString(R.string.device_qj));
     }
 
     /**
@@ -321,13 +321,13 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
     private void setBatteryState(int state){
         if (state==1){
             ivBatteryState.setImageResource(R.mipmap.ic_battery_middle);
-            tvBatteryState.setText("中");
+            tvBatteryState.setText(R.string.device_m);
         }else if (state==2){
             ivBatteryState.setImageResource(R.mipmap.ic_battery_hi);
-            tvBatteryState.setText("高");
+            tvBatteryState.setText(R.string.device_h);
         }else if (state == 0){
             ivBatteryState.setImageResource(R.mipmap.ic_battery_low);
-            tvBatteryState.setText("低");
+            tvBatteryState.setText(R.string.device_low);
         }
     }
 
@@ -341,7 +341,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
                 curTemp = curTemp-1;
                 if (getHexResult(tempUnit)==1){
                     if (curTemp<-13){
-                        showToast("设置温度不能低于-13℉");
+                        showToast(getString(R.string.device_not_low));
                     }else{
                         if (curTemp<0){
                             curTemp = curTemp+256;
@@ -351,7 +351,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
                     }
                 }else{
                     if (curTemp<-25){
-                        showToast("设置温度不能低于-25℃");
+                        showToast(getString(R.string.device_not_low_25));
                     }else{
                         if (curTemp<0){
                             curTemp = curTemp+256;
@@ -367,7 +367,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
                 curTemp = curTemp+1;
                 if (getHexResult(tempUnit)==1){
                     if (curTemp>68){
-                        showToast("设置温度不能高于68℉");
+                        showToast(getString(R.string.device_not_high_68));
                     }else{
                         if (curTemp<0){
                             curTemp = curTemp+256;
@@ -377,7 +377,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
                     }
                 }else{
                     if (curTemp>20){
-                        showToast("设置温度不能高于20℃");
+                        showToast(getString(R.string.device_not_high_20));
                     }else{
                         if (curTemp<0){
                             curTemp = curTemp+256;
@@ -417,7 +417,7 @@ public class SmartFridgeActivity extends BaseActivity implements View.OnClickLis
 
     @Override
     public void disConnected(BleDevice bleDevice) {
-        showToast("连接已断开");
+        showToast(getString(R.string.connect_error));
         finish();
     }
 

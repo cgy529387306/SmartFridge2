@@ -37,6 +37,7 @@ import com.clj.fastble.callback.BleScanCallback;
 import com.clj.fastble.data.BleDevice;
 import com.clj.fastble.exception.BleException;
 import com.clj.fastble.scan.BleScanRuleConfig;
+import com.mb.smart.MyApplication;
 import com.mb.smart.R;
 import com.mb.smart.adapter.DeviceAdapter;
 import com.mb.smart.adapter.DrawerLayoutAdapter;
@@ -48,7 +49,6 @@ import com.mb.smart.utils.JsonHelper;
 import com.mb.smart.utils.NavigationHelper;
 import com.mb.smart.utils.ProgressDialogHelper;
 import com.mb.smart.utils.ToastHelper;
-import com.mb.smart.MyApplication;
 import com.mb.smart.views.DividerItemDecoration;
 
 import java.util.ArrayList;
@@ -73,20 +73,23 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private TextView tvAddDevice; //底部  添加设备
     private LinearLayout llyNoDevice; //  设备界面
     private List<DrawerlayoutEntity> list = new ArrayList<>();
-    private int img[] = new int[]{R.mipmap.ic_about,R.mipmap.ic_store,R.mipmap.ic_edit_password,R.mipmap.ic_logout};
-    private String[] text = new String[]{"关于我们","线上商城","修改密码","退出登录"};
+//    private int img[] = new int[]{R.mipmap.ic_about,R.mipmap.ic_store,R.mipmap.ic_edit_password,R.mipmap.ic_logout};
+//    private String[] text = new String[]{"关于我们","线上商城","修改密码","退出登录"};
+
+    private int img[];
+    private String[] text;
     private BluetoothAdapter bluetoothAdapter;
     private List<BleDevice> deviceList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("选择设备");
+        setTitle(getString(R.string.select_device));
         initDrawerLayout();
         initView();
         initListener();
         initBlueManager();
-//        checkVersion();
+        checkVersion();
     }
 
     private void setTitle(String title) {
@@ -108,9 +111,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void initView() {
-        tvName = findViewById(R.id.tv_name);
-        tvName.setText(AVUser.getCurrentUser().getUsername());
-
+//        tvName = findViewById(R.id.tv_name);
+//        tvName.setText(AVUser.getCurrentUser().getUsername());
         ivSearch = findViewById(R.id.iv_search);
         tvSearch = findViewById(R.id.tv_search);
         drawerLayout = findViewById(R.id.dl_content_main_menu);
@@ -183,6 +185,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         avQuery.getInBackground("5b1f9dfca22b9d003a48a79e", new GetCallback<AVObject>() {
             @Override
             public void done(AVObject avObject, AVException e) {
+                if (avObject==null){
+                    return;
+                }
                 Log.d("result",avObject.toString());
                 VersionInfo versionInfo = JsonHelper.fromJson(avObject.toString(), VersionInfo.class);
                 if (versionInfo!=null && versionInfo.getServerData()!=null){
@@ -281,7 +286,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             @Override
             public void onScanStarted(boolean success) {
                 ivSearch.setVisibility(View.VISIBLE);
-                tvSearch.setText("搜索可用设备");
+                tvSearch.setText(R.string.search_vailable_device);
                 llyCancelBack.setVisibility(View.VISIBLE);
                 tvAddDevice.setVisibility(View.GONE);
                 AnimationDrawable anim = (AnimationDrawable) ivSearch.getBackground();
@@ -321,7 +326,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private void cancelSearch(){
         BleManager.getInstance().cancelScan();
         ivSearch.setVisibility(View.GONE);
-        tvSearch.setText("我的设备");
+        tvSearch.setText(R.string.my_device);
         llyCancelBack.setVisibility(View.GONE);
         tvAddDevice.setVisibility(View.VISIBLE);
     }
@@ -329,7 +334,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private void searchComplete(){
         Log.d("myTag","搜索完成");
         ivSearch.setVisibility(View.GONE);
-        tvSearch.setText("我的设备");
+        tvSearch.setText(R.string.my_device);
         llyNoDevice.setVisibility(CommonUtils.isEmpty(deviceList)?View.VISIBLE:View.GONE);
         lvDevice.setVisibility(CommonUtils.isEmpty(deviceList)?View.GONE:View.VISIBLE);
     }
@@ -373,6 +378,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     private void initDrawerLayout(){
+        img = new int[]{R.mipmap.ic_about};
+        text = new String[]{getResources().getString(R.string.aboutus)};
         for (int i = 0;i < img.length;i++) {
             list.add(new DrawerlayoutEntity(img[i],text[i]));
         }
@@ -452,7 +459,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     public void onBackPressed() {
         if (System.currentTimeMillis() - mLastClickTimeMills > DOUBLE_CLICK_INTERVAL) {
-            ToastHelper.showToast("再按一次返回退出");
+            ToastHelper.showToast(R.string.more_back_exit);
             mLastClickTimeMills = System.currentTimeMillis();
             return;
         }

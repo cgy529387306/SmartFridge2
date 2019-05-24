@@ -21,9 +21,9 @@ public class DeviceAdapter extends BaseQuickAdapter<BleDevice, BaseViewHolder> {
     @Override
     protected void convert(BaseViewHolder helper, BleDevice bleDevice) {
         boolean isConnected = BleManager.getInstance().isConnected(bleDevice);
-        helper.setText(R.id.tv_name, "Smart车载冰箱");
+        helper.setText(R.id.tv_name, mContext.getString(R.string.title_tawa));
         helper.setText(R.id.tv_model, bleDevice.getMac());
-        helper.setText(R.id.tv_bound_state,isConnected?"连接":"未连接");
+        helper.setText(R.id.tv_bound_state,isConnected?mContext.getString(R.string.connected):mContext.getString(R.string.disconnet));
         helper.setTextColor(R.id.tv_bound_state,isConnected?mContext.getResources().getColor(R.color.colorBlue):mContext.getResources().getColor(R.color.colorHint));
         helper.setImageResource(R.id.iv_bound_state,isConnected?R.mipmap.ic_arrow_right:R.mipmap.ic_warn_info);
     }

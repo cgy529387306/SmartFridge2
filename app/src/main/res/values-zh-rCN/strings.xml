@@ -1,27 +1,5 @@
 <resources>
     <string name="app_name">Smart车载冰箱</string>
-    <string name="input_phone">输入手机号码</string>
-    <string name="input_pwd">输入登录密码</string>
-    <string name="login">登录</string>
-    <string name="register">注册新用户</string>
-    <string name="forget_pwd">忘记密码？</string>
-    <string name="get_valid_code">获取验证码</string>
-    <string name="reget_after_seconds">秒后重新获取</string>
-    <string name="input_correct_tel">请输入手机号码</string>
-    <string name="send_success">发送成功</string>
-    <string name="register_success">注册成功</string>
-    <string name="modify_success">修改成功</string>
-    <string name="login_success">登录成功</string>
-    <string name="login_to_bind_tip">您是第一次登陆，请先绑定手机号</string>
-    <string name="bind_success">绑定成功</string>
-    <string name="input_password">请输入密码</string>
-    <string name="input_valid_code">请输入验证码</string>
-    <string name="tel_error">手机号码错误</string>
-    <string name="password_error">密码格式错误</string>
-    <string name="tmall">TAWA\n天猫旗舰店</string>
-    <string name="jd">TAWA\n京东旗舰店</string>
-    <string name="logining">登录中...</string>
-
     <string name="aboutus">关于我们</string>
     <string name="about">TAWA 初创于德国，品牌囊括旅行(Travel) 、陪伴(Accompany) 、智慧(Wisdom) 、娱乐(Amusement)四重理念，旨在连接家庭、汽车，生活。
         \n\n在为您提供德系高品质车品的同时，TAWA还为您和家人带来与自驾游相关的吃、住、行、玩所需装备一站式解决方案。\n \n快乐自驾，TAWA相伴。
@@ -58,5 +36,4 @@
     <string name="device_not_low_25">设置温度不能低于-25℃</string>
     <string name="device_not_high_68">设置温度不能高于68℉</string>
     <string name="device_not_high_20">设置温度不能高于20℃</string>
-
 </resources>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Smart車用冷蔵庫は</string>
+    <string name="aboutus">私たちについて</string>
+    <string name="about">Smart車用冷蔵庫は、自社の知恵を活かした車用冷蔵庫工場で開発された専属アプリです。成功はすべて一歩ずつ奮闘してきたのです。親愛なるあなた、あなたは寮、マンション、車で移動して、トラックを使っても、私達は精一杯あなたのためにもっと多く作ります。\n私たちは市場の高級品を普及させて市場の通需品にすることを志して、絶えず品質を高めると同時に、厚道の価格はかえって私達が絶えず目標の最低ラインを追求するのだと思います。私たちは皆さんといつまでも一緒に立って、一緒に楽しみのために頑張りましょう。  \n楽しみは一瞬であり、長い間でもある。Smart車の冷蔵庫はあそこにあります。
+    </string>
+    <string name="search_vailable_device">利用可能なデバイスを検索</string>
+    <string name="my_device">私の設備</string>
+    <string name="search_no_device">利用可能なデバイスが見つかりませんでした</string>
+    <string name="sure_near">冷蔵庫が起動していることを確認してください。携帯を冷蔵庫に近づけました。</string>
+    <string name="make_sure_open_device">冷蔵庫が起動していることを確認してください。携帯を冷蔵庫に近づけました。</string>
+    <string name="cancel_back">戻りをキャンセル</string>
+    <string name="search_again">再検索</string>
+    <string name="bluettooth_not_open">システムのBluetoothはすでに閉じています。システムのBluetoothを開いてください。</string>
+    <string name="connect_error">デバイスが接続を失う</string>
+    <string name="dialog_negative">キャンセル</string>
+    <string name="connected">接続済み</string>
+    <string name="disconnet">未接続</string>
+    <string name="add_device">+デバイスを追加</string>
+    <string name="open_bluetooth">ブルートゥースを開く</string>
+    <string name="current_temp">現在の温度</string>
+    <string name="current_mode">現在のモード</string>
+    <string name="device_battery_state">バッテリー保護ギア</string>
+    <string name="dialog_positive">を選択します</string>
+    <string name="more_back_exit">再按一次返回退出</string>
+    <string name="select_device">デバイスを追加</string>
+    <string name="title_tawa">Smart車用冷蔵庫は</string>
+    <string name="setting_wd">設定温度：%1$d%2$s</string>
+    <string name="setting_dcdy">バッテリ電圧：%1$d.%2$d</string>
+    <string name="device_jn">省エネ</string>
+    <string name="device_qj">強い</string>
+    <string name="device_m">にある</string>
+    <string name="device_h">高さ</string>
+    <string name="device_low">低い</string>
+    <string name="device_not_low">設定温度範囲は-13℉から68℉までです</string>
+    <string name="device_not_low_25">設定温度範囲は-25℃から20℃までです</string>
+    <string name="device_not_high_68">設定温度範囲は-13℉から68℉までです</string>
+    <string name="device_not_high_20">設定温度範囲は-25℃から20℃までです</string>
+</resources>

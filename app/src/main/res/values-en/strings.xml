@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Smart Vehicle Refrigerator</string>
+    <string name="aboutus">About Us</string>
+    <string name="about">Smart Vehicle Refrigerator is a special APP developed by Smart Vehicle Refrigerator Factory. We are determined to create a full-scale solution for you. Success comes step by step. Dear you, whether you use in dormitories, apartments, self-driving trips, trucks, we are trying to do more for you. \n    We are determined to make the high-end products in the market universal. While constantly improving the quality, we believe that generous prices are the bottom line of our constant pursuit of goals. We will always stand together with you to help happiness! \n    Happiness is a moment and a long time. Smart Car Refrigerator It's right there!
+    </string>
+    <string name="search_vailable_device">Search for Available Devices</string>
+    <string name="my_device">My equipment</string>
+    <string name="search_no_device">No available devices were found</string>
+    <string name="sure_near">Make sure your refrigerator is on and your cell phone is near the refrigerator!</string>
+    <string name="make_sure_open_device">Make sure your refrigerator is on!</string>
+    <string name="connect_error">Device Lost Connection</string>
+    <string name="connected">Connected</string>
+    <string name="disconnet">Unconnected</string>
+    <string name="cancel_back">Cancel Return</string>
+    <string name="search_again">Search again</string>
+    <string name="add_device">+Add Equipment</string>
+    <string name="bluettooth_not_open">System Bluetooth is off, please turn on System Bluetooth</string>
+    <string name="open_bluetooth">Turn On Bluetooth</string>
+    <string name="current_temp">The current temperature</string>
+    <string name="current_mode">Current mode</string>
+    <string name="device_battery_state">Electromagnetic protection</string>
+    <string name="dialog_positive">Sure</string>
+    <string name="dialog_negative">Cancel</string>
+    <string name="more_back_exit">More click exit</string>
+    <string name="select_device">Search for Available Devices</string>
+    <string name="title_tawa">Smart Vehicle Refrigerator</string>
+    <string name="setting_wd">Setting Temperature：%1$d%2$s</string>
+    <string name="setting_dcdy">Battery Voltage：%1$d.%2$d</string>
+    <string name="device_jn">Energy Conservation</string>
+    <string name="device_qj">Powerful</string>
+    <string name="device_m">Middle</string>
+    <string name="device_h">High</string>
+    <string name="device_low">Low</string>
+    <string name="device_not_low">Setting temperature range - 13℉ to 68℉</string>
+    <string name="device_not_low_25">The set temperature range is -25℃ to 20℃</string>
+    <string name="device_not_high_68">Setting temperature range - 13℉ to 68℉</string>
+    <string name="device_not_high_20">The set temperature range is -25℃ to 20℃</string>
+</resources>
