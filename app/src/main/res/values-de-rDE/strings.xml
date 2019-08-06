@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Smart Car Refrigerator</string>
+    <string name="aboutus">Über uns</string>
+    <string name="about">Smart Car Refrigerator ist eine spezielle App, die auf der Grundlage einer eigenen Fabrik für intelligente Autokühlschränke entwickelt wurde. Wir sind fest entschlossen, eine vollständige Szenelösung für alle zu erstellen. Erfolg ist ein schrittweiser Kampf. Sehr geehrte Damen und Herren, egal ob Sie in einem Schlafsaal, einer Wohnung, einem selbstfahrenden Lastwagen arbeiten, wir tun unser Bestes, um mehr für Sie zu tun. \ n Wir sind fest entschlossen, die High-End-Produkte des Marktes auf den Markt zu bringen. \ n \ nWährend wir die Qualität ständig verbessern, glauben wir, dass der Preis der Freundlichkeit das Endergebnis unserer ständigen Verfolgung des Ziels ist. Wir werden für immer bei Ihnen stehen und zusammenkommen, um Ihnen zu helfen! \ n Glücklich, es ist ein Moment, aber auch eine lange Zeit. Smart Auto Kühlschrank ist es da!
+    </string>
+    <string name="search_vailable_device">Suche nach verfügbaren Geräten</string>
+    <string name="my_device">Mein Gerät</string>
+    <string name="search_no_device">Keine verfügbaren Geräte gefunden</string>
+    <string name="sure_near">Stellen Sie sicher, dass Ihr Kühlschrank eingeschaltet ist und sich Ihr Telefon in der Nähe des Kühlschranks befindet!</string>
+    <string name="make_sure_open_device">Das Bluetooth-System ist ausgeschaltet. Bitte schalten Sie das Bluetooth-System ein!</string>
+    <string name="connect_error">Gerät verliert die Verbindung</string>
+    <string name="search_again">Erneut verbinden</string>
+    <string name="connected">Verbunden</string>
+    <string name="disconnet">Nicht verbunden</string>
+    <string name="cancel_back">Abbrechen</string>
+    <string name="add_device">+ Gerät hinzufügen</string>
+    <string name="bluettooth_not_open">Bluetooth ist nicht eingeschaltet</string>
+    <string name="open_bluetooth">Schalten Sie Bluetooth ein</string>
+    <string name="current_temp">Aktuelle Temperatur</string>
+    <string name="current_mode">Aktueller Modus</string>
+    <string name="device_battery_state">Spannungsschutz-Datei</string>
+    <string name="dialog_positive">Bestimmen Sie</string>
+    <string name="dialog_negative">Abbrechen</string>
+    <string name="more_back_exit">Out</string>
+    <string name="select_device">Gerät hinzufügen</string>
+    <string name="title_tawa">Smart Car Refrigerator</string>
+    <string name="setting_wd">Temperatur einstellen：%1$d%2$s</string>
+    <string name="setting_dcdy">Batteriespannung：%1$d.%2$d</string>
+    <string name="device_jn">Stark</string>
+    <string name="device_qj">Energie sparen</string>
+    <string name="device_m">Medium</string>
+    <string name="device_h">Hoch</string>
+    <string name="device_low">Niedrig</string>
+    <string name="device_not_low">Stellen Sie den Temperaturbereich von -13 ° F bis 68 ° F ein</string>
+    <string name="device_not_low_25">Stellen Sie den Temperaturbereich von -25 ° C bis 20 ° C ein</string>
+    <string name="device_not_high_68">Stellen Sie den Temperaturbereich von -13 ° F bis 68 ° F ein</string>
+    <string name="device_not_high_20">Stellen Sie den Temperaturbereich von -25 ° C bis 20 ° C ein</string>
+</resources>

@@ -8,8 +8,8 @@ android {
         applicationId "com.mb.smart"
         minSdkVersion 18
         targetSdkVersion 26
-        versionCode 100
-        versionName "1.0.0"
+        versionCode 101
+        versionName "1.0.1"
     }
 
 //    dexOptions {
@@ -55,9 +55,9 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    // LeanCloud 基础包
-    compile ('cn.leancloud.android:avoscloud-sdk:v3.+')
-    compile ('cn.leancloud.android:avoscloud-statistics:v3.+')
+//    // LeanCloud 基础包
+//    compile ('cn.leancloud.android:avoscloud-sdk:v3.+')
+//    compile ('cn.leancloud.android:avoscloud-statistics:v3.+')
     compile 'com.clj.fastble:FastBleLib:2.3.2'
     compile('com.hwangjr.rxbus:rxbus:1.0.5') {
         exclude group: 'com.jakewharton.timber', module: 'timber'

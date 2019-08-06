@@ -1,6 +1,5 @@
 package com.mb.smart.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.text.TextUtils;
@@ -9,15 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.avos.avoscloud.AVAnalytics;
-import com.avos.avoscloud.AVException;
-import com.avos.avoscloud.AVOSCloud;
-import com.avos.avoscloud.AVUser;
-import com.avos.avoscloud.LogInCallback;
-import com.avos.avoscloud.RequestMobileCodeCallback;
-import com.avos.avoscloud.SaveCallback;
 import com.mb.smart.R;
-import com.mb.smart.utils.ActivityManager;
 import com.mb.smart.utils.ProgressDialogHelper;
 import com.mb.smart.utils.ProjectHelper;
 
@@ -109,17 +100,17 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
             return;
         }
         ProgressDialogHelper.showProgressDialog(this,"发送中...");
-        AVOSCloud.requestSMSCodeInBackground(mobile, new RequestMobileCodeCallback() {
-            @Override
-            public void done(AVException e) {
-                ProgressDialogHelper.dismissProgressDialog();
-                if (e == null) {
-                    showToast(getString(R.string.send_success));
-                } else {
-                    ProjectHelper.showErrorMessage(e.getMessage());
-                }
-            }
-        });
+//        AVOSCloud.requestSMSCodeInBackground(mobile, new RequestMobileCodeCallback() {
+//            @Override
+//            public void done(AVException e) {
+//                ProgressDialogHelper.dismissProgressDialog();
+//                if (e == null) {
+//                    showToast(getString(R.string.send_success));
+//                } else {
+//                    ProjectHelper.showErrorMessage(e.getMessage());
+//                }
+//            }
+//        });
     }
 
     public void validCode() {
@@ -144,43 +135,43 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
             return;
         }
         ProgressDialogHelper.showProgressDialog(this,"注册中...");
-        AVUser.signUpOrLoginByMobilePhoneInBackground(mobile, code, new LogInCallback<AVUser>() {
-            @Override
-            public void done(AVUser avUser, AVException e) {
-                ProgressDialogHelper.dismissProgressDialog();
-                if (e == null) {
-                    doRegister(password);
-                } else {
-                    ProjectHelper.showErrorMessage(e.getMessage());
-                }
-            }
-        });
+//        AVUser.signUpOrLoginByMobilePhoneInBackground(mobile, code, new LogInCallback<AVUser>() {
+//            @Override
+//            public void done(AVUser avUser, AVException e) {
+//                ProgressDialogHelper.dismissProgressDialog();
+//                if (e == null) {
+//                    doRegister(password);
+//                } else {
+//                    ProjectHelper.showErrorMessage(e.getMessage());
+//                }
+//            }
+//        });
     }
 
-    private void doRegister(final String password){
-        AVUser.getCurrentUser().setPassword(password);
-        AVUser.getCurrentUser().saveInBackground(new SaveCallback() {
-            @Override
-            public void done(AVException e) {
-                AVUser.getCurrentUser().setPassword(password);
-                AVUser.getCurrentUser().saveInBackground();
-                showToast(getString(R.string.register_success));
-                ActivityManager.getInstance().closeAllActivity();
-                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
-            }
-        });
-    }
+//    private void doRegister(final String password){
+//        AVUser.getCurrentUser().setPassword(password);
+//        AVUser.getCurrentUser().saveInBackground(new SaveCallback() {
+//            @Override
+//            public void done(AVException e) {
+//                AVUser.getCurrentUser().setPassword(password);
+//                AVUser.getCurrentUser().saveInBackground();
+//                showToast(getString(R.string.register_success));
+//                ActivityManager.getInstance().closeAllActivity();
+//                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+//            }
+//        });
+//    }
 
 
     @Override
     protected void onPause() {
         super.onPause();
-        AVAnalytics.onPause(this);
+//        AVAnalytics.onPause(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        AVAnalytics.onResume(this);
+//        AVAnalytics.onResume(this);
     }
 }

@@ -4,10 +4,8 @@ package com.mb.smart.activity;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.WindowManager;
 
-import com.avos.avoscloud.AVUser;
 import com.mb.smart.R;
 import com.mb.smart.utils.NavigationHelper;
 import com.mb.smart.utils.Utils;

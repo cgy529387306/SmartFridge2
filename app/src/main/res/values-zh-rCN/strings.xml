@@ -9,31 +9,34 @@
     <string name="search_no_device">找不到可用设备</string>
     <string name="sure_near">请确保您的冰箱已开机，并已将手机靠近冰箱!</string>
     <string name="make_sure_open_device">请确保已打开手机蓝牙和冰箱!</string>
+    <string name="cancel_back">取消返回</string>
     <string name="connect_error">连接已断开</string>
+    <string name="search_again">重新搜索</string>
+    <string name="bluettooth_not_open">手机蓝牙未开启</string>
+    <string name="dialog_negative">取 消</string>
     <string name="connected">已连接</string>
     <string name="disconnet">未连接</string>
-    <string name="cancel_back">取消返回</string>
-    <string name="search_again">重新搜索</string>
-    <string name="add_device">+ 添加设备</string>
-    <string name="bluettooth_not_open">手机蓝牙未开启</string>
-    <string name="open_bluetooth">开启蓝牙</string>
-    <string name="current_temp">当前温度</string>
-    <string name="current_mode">当前模式</string>
-    <string name="device_battery_state">电池保护档</string>
     <string name="dialog_positive">确 定</string>
-    <string name="dialog_negative">取 消</string>
-    <string name="more_back_exit">再按一次返回退出</string>
-    <string name="select_device">选择设备</string>
-    <string name="title_tawa">Smart智能车载冰箱</string>
-    <string name="setting_wd">设置温度：%1$d%2$s</string>
-    <string name="setting_dcdy">电池电压：%1$d.%2$d</string>
-    <string name="device_jn">节能</string>
-    <string name="device_qj">强劲</string>
-    <string name="device_m">中</string>
-    <string name="device_h">高</string>
-    <string name="device_low">低</string>
+    <string name="add_device">+ 添加设备</string>
+
     <string name="device_not_low">设置温度不能低于-13℉</string>
     <string name="device_not_low_25">设置温度不能低于-25℃</string>
     <string name="device_not_high_68">设置温度不能高于68℉</string>
     <string name="device_not_high_20">设置温度不能高于20℃</string>
+    <string name="setting_wd">设置温度：%1$d%2$s</string>
+    <string name="device_qj">强劲</string>
+    <string name="device_jn">节能</string>
+    <string name="device_low">低</string>
+    <string name="device_m">中</string>
+    <string name="device_h">高</string>
+    <string name="setting_dcdy">电池电压：%1$d.%2$d</string>
+    <string name="open_bluetooth">开启蓝牙</string>
+    <string name="current_mode">当前模式</string>
+    <string name="device_battery_state">电池保护档</string>
+    <string name="current_temp">当前温度</string>
+    <string name="more_back_exit">再按一次返回退出</string>
+    <string name="select_device">选择设备</string>
+    <string name="title_tawa">Smart智能车载冰箱</string>
+
+
 </resources>

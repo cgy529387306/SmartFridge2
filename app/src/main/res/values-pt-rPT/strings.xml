@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Smart</string>
+    <string name="aboutus">Sobre nós</string>
+    <string name="about">Refrigerador do carro inteligente é um aplicativo dedicado desenvolvido contando com a sua própria fábrica de carros inteligentes geladeira Estamos determinados a criar uma solução de cena completa para todos. O sucesso é uma luta passo a passo. Caro, não importa se você é usado em dormitório, apartamento, auto-condução, caminhão, estamos fazendo o nosso melhor para fazer mais por você. \ n Estamos determinados a tornar os produtos de alta qualidade do mercado popularizados no mercado.Enquanto estamos melhorando constantemente a qualidade, acreditamos que o preço da gentileza é a base da nossa busca constante pela meta. Estaremos com você para sempre e nos uniremos para ajudá-lo! \ n Feliz, é um momento, mas também por muito tempo. Refrigerador do carro inteligente está lá!
+    </string>
+    <string name="search_vailable_device">Procurar por dispositivos disponíveis</string>
+    <string name="my_device">Meu dispositivo</string>
+    <string name="search_no_device">Nenhum dispositivo disponível encontrado</string>
+    <string name="sure_near">Verifique se a geladeira está ligada e se o seu telefone está perto da geladeira!</string>
+    <string name="make_sure_open_device">Verifique se a geladeira está ligada e se o seu telefone está perto da geladeira!</string>
+    <string name="cancel_back">Cancelar de volta</string>
+    <string name="connect_error">O dispositivo perde a conexão</string>
+    <string name="search_again">Reconectar</string>
+    <string name="bluettooth_not_open">Dispositivo de conexão</string>
+    <string name="dialog_negative">Cancelar</string>
+    <string name="connected">Conectado</string>
+    <string name="disconnet">Não conectado</string>
+    <string name="dialog_positive">Determinar</string>
+    <string name="add_device">+Adicionar dispositivo</string>
+
+    <string name="device_not_low">Definir intervalo de temperatura de -13 ° F a 68 ° F</string>
+    <string name="device_not_low_25">Definir intervalo de temperatura de -25 ° C a 20 ° C</string>
+    <string name="device_not_high_68">Definir intervalo de temperatura de -13 ° F a 68 ° F</string>
+    <string name="device_not_high_20">Definir intervalo de temperatura de -25 ° C a 20 ° C</string>
+    <string name="setting_wd">Temperatura de ajuste：%1$d%2$s</string>
+    <string name="device_qj">Forte</string>
+    <string name="device_jn">Economia de energia</string>
+    <string name="device_low">Baixo</string>
+    <string name="device_m">Médio</string>
+    <string name="device_h">Alta</string>
+    <string name="setting_dcdy">Tensão da bateria：%1$d.%2$d</string>
+    <string name="open_bluetooth">Ligue o Bluetooth</string>
+    <string name="current_mode">Modo atual</string>
+    <string name="device_battery_state">Arquivo de proteção de tensão</string>
+    <string name="current_temp">Temperatura atual</string>
+    <string name="more_back_exit">Out</string>
+    <string name="select_device">Adicionar dispositivo</string>
+    <string name="title_tawa">Smart</string>
+</resources>

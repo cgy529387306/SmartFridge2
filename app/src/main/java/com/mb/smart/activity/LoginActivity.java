@@ -1,16 +1,11 @@
 package com.mb.smart.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.avos.avoscloud.AVAnalytics;
-import com.avos.avoscloud.AVException;
-import com.avos.avoscloud.AVUser;
-import com.avos.avoscloud.LogInCallback;
 import com.mb.smart.R;
 import com.mb.smart.utils.NavigationHelper;
 import com.mb.smart.utils.ProgressDialogHelper;
@@ -83,18 +78,18 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             return;
         }
         ProgressDialogHelper.showProgressDialog(this,"登录中...");
-        AVUser.loginByMobilePhoneNumberInBackground(mobile, password, new LogInCallback<AVUser>() {
-            @Override
-            public void done(AVUser avUser, AVException e) {
-                ProgressDialogHelper.dismissProgressDialog();
-                if (e == null) {
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                    finish();
-                } else {
-                    ProjectHelper.showErrorMessage(e.getMessage());
-                }
-            }
-        });
+//        AVUser.loginByMobilePhoneNumberInBackground(mobile, password, new LogInCallback<AVUser>() {
+//            @Override
+//            public void done(AVUser avUser, AVException e) {
+//                ProgressDialogHelper.dismissProgressDialog();
+//                if (e == null) {
+//                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//                    finish();
+//                } else {
+//                    ProjectHelper.showErrorMessage(e.getMessage());
+//                }
+//            }
+//        });
     }
 
     // region 双击返回
@@ -116,13 +111,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     protected void onPause() {
         super.onPause();
-        AVAnalytics.onPause(this);
+//        AVAnalytics.onPause(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        AVAnalytics.onResume(this);
+//        AVAnalytics.onResume(this);
     }
 
 }

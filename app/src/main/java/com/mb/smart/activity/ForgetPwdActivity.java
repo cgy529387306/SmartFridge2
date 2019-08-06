@@ -8,10 +8,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.avos.avoscloud.AVException;
-import com.avos.avoscloud.AVUser;
-import com.avos.avoscloud.RequestMobileCodeCallback;
-import com.avos.avoscloud.UpdatePasswordCallback;
 import com.mb.smart.R;
 import com.mb.smart.utils.ProgressDialogHelper;
 import com.mb.smart.utils.ProjectHelper;
@@ -91,18 +87,18 @@ public class ForgetPwdActivity extends BaseActivity implements View.OnClickListe
             showToast(getString(R.string.password_error));
             return;
         }
-        AVUser.resetPasswordBySmsCodeInBackground(code, password, new UpdatePasswordCallback() {
-            @Override
-            public void done(AVException e) {
-                ProgressDialogHelper.dismissProgressDialog();
-                if (e == null) {
-                    showToast(getString(R.string.modify_success));
-                    finish();
-                } else {
-                    ProjectHelper.showErrorMessage(e.getMessage());
-                }
-            }
-        });
+//        AVUser.resetPasswordBySmsCodeInBackground(code, password, new UpdatePasswordCallback() {
+//            @Override
+//            public void done(AVException e) {
+//                ProgressDialogHelper.dismissProgressDialog();
+//                if (e == null) {
+//                    showToast(getString(R.string.modify_success));
+//                    finish();
+//                } else {
+//                    ProjectHelper.showErrorMessage(e.getMessage());
+//                }
+//            }
+//        });
     }
 
 
@@ -135,16 +131,16 @@ public class ForgetPwdActivity extends BaseActivity implements View.OnClickListe
             return;
         }
         ProgressDialogHelper.showProgressDialog(this,"发送中...");
-        AVUser.requestPasswordResetBySmsCodeInBackground(mobile, new RequestMobileCodeCallback() {
-            @Override
-            public void done(AVException e) {
-                ProgressDialogHelper.dismissProgressDialog();
-                if (e == null) {
-                    showToast(getString(R.string.send_success));
-                } else {
-                    ProjectHelper.showErrorMessage(e.getMessage());
-                }
-            }
-        });
+//        AVUser.requestPasswordResetBySmsCodeInBackground(mobile, new RequestMobileCodeCallback() {
+//            @Override
+//            public void done(AVException e) {
+//                ProgressDialogHelper.dismissProgressDialog();
+//                if (e == null) {
+//                    showToast(getString(R.string.send_success));
+//                } else {
+//                    ProjectHelper.showErrorMessage(e.getMessage());
+//                }
+//            }
+//        });
     }
 }

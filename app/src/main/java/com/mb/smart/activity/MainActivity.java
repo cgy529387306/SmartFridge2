@@ -3,7 +3,6 @@ package com.mb.smart.activity;
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothGatt;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
@@ -25,11 +24,6 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.avos.avoscloud.AVException;
-import com.avos.avoscloud.AVObject;
-import com.avos.avoscloud.AVQuery;
-import com.avos.avoscloud.AVUser;
-import com.avos.avoscloud.GetCallback;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.clj.fastble.BleManager;
 import com.clj.fastble.callback.BleGattCallback;
@@ -37,15 +31,11 @@ import com.clj.fastble.callback.BleScanCallback;
 import com.clj.fastble.data.BleDevice;
 import com.clj.fastble.exception.BleException;
 import com.clj.fastble.scan.BleScanRuleConfig;
-import com.mb.smart.MyApplication;
 import com.mb.smart.R;
 import com.mb.smart.adapter.DeviceAdapter;
 import com.mb.smart.adapter.DrawerLayoutAdapter;
 import com.mb.smart.entity.DrawerlayoutEntity;
-import com.mb.smart.entity.VersionInfo;
 import com.mb.smart.utils.CommonUtils;
-import com.mb.smart.utils.DialogHelper;
-import com.mb.smart.utils.JsonHelper;
 import com.mb.smart.utils.NavigationHelper;
 import com.mb.smart.utils.ProgressDialogHelper;
 import com.mb.smart.utils.ToastHelper;
@@ -89,7 +79,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initView();
         initListener();
         initBlueManager();
-        checkVersion();
+//        checkVersion();
     }
 
     private void setTitle(String title) {
@@ -171,7 +161,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                         NavigationHelper.startActivity(MainActivity.this,ForgetPwdActivity.class,bundle,false);
                         break;
                     case 3:
-                        loginOut();
+//                        loginOut();
                         break;
                     default:
                         break;
@@ -180,34 +170,34 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         });
     }
 
-    private void checkVersion(){
-        AVQuery<AVObject> avQuery = new AVQuery<>("app_version");
-        avQuery.getInBackground("5b1f9dfca22b9d003a48a79e", new GetCallback<AVObject>() {
-            @Override
-            public void done(AVObject avObject, AVException e) {
-                if (avObject==null){
-                    return;
-                }
-                Log.d("result",avObject.toString());
-                VersionInfo versionInfo = JsonHelper.fromJson(avObject.toString(), VersionInfo.class);
-                if (versionInfo!=null && versionInfo.getServerData()!=null){
-                    String code = CommonUtils.getVersionName(MyApplication.getAppContext());
-                    VersionInfo.ServerDataBean dataBean = versionInfo.getServerData();
-                    if (getVersion(code)<getVersion(dataBean.getVersion())){
-                        DialogHelper.showConfirmDialog(MainActivity.this, CommonUtils.isNotEmpty(dataBean.getTitle())?dataBean.getTitle():"版本更新", dataBean.getTips(), getVersion(dataBean.getForce_reboot())==0,
-                                R.string.dialog_positive, new DialogInterface.OnClickListener() {
-
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        openUrlWithBrowser("http://www.chinatawa.com/app/app-download.html");
-                                    }
-
-                                }, R.string.dialog_negative, null);
-                    }
-                }
-            }
-        });
-    }
+//    private void checkVersion(){
+//        AVQuery<AVObject> avQuery = new AVQuery<>("app_version");
+//        avQuery.getInBackground("5b1f9dfca22b9d003a48a79e", new GetCallback<AVObject>() {
+//            @Override
+//            public void done(AVObject avObject, AVException e) {
+//                if (avObject==null){
+//                    return;
+//                }
+//                Log.d("result",avObject.toString());
+//                VersionInfo versionInfo = JsonHelper.fromJson(avObject.toString(), VersionInfo.class);
+//                if (versionInfo!=null && versionInfo.getServerData()!=null){
+//                    String code = CommonUtils.getVersionName(MyApplication.getAppContext());
+//                    VersionInfo.ServerDataBean dataBean = versionInfo.getServerData();
+//                    if (getVersion(code)<getVersion(dataBean.getVersion())){
+//                        DialogHelper.showConfirmDialog(MainActivity.this, CommonUtils.isNotEmpty(dataBean.getTitle())?dataBean.getTitle():"版本更新", dataBean.getTips(), getVersion(dataBean.getForce_reboot())==0,
+//                                R.string.dialog_positive, new DialogInterface.OnClickListener() {
+//
+//                                    @Override
+//                                    public void onClick(DialogInterface dialog, int which) {
+//                                        openUrlWithBrowser("http://www.chinatawa.com/app/app-download.html");
+//                                    }
+//
+//                                }, R.string.dialog_negative, null);
+//                    }
+//                }
+//            }
+//        });
+//    }
 
     private int getVersion(String version){
         try {
@@ -468,23 +458,23 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     // endregion 双击返回
 
 
-    /**
-     * 退出登录
-     */
-    private void loginOut(){
-        //注销账号
-        DialogHelper.showConfirmDialog(MainActivity.this, "注销", "确定要退出当前账号？", true,
-                R.string.dialog_positive, new DialogInterface.OnClickListener() {
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        AVUser.getCurrentUser().logOut();
-                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                        finish();
-                    }
-
-                }, R.string.dialog_negative, null);
-    }
+//    /**
+//     * 退出登录
+//     */
+//    private void loginOut(){
+//        //注销账号
+//        DialogHelper.showConfirmDialog(MainActivity.this, "注销", "确定要退出当前账号？", true,
+//                R.string.dialog_positive, new DialogInterface.OnClickListener() {
+//
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        AVUser.getCurrentUser().logOut();
+//                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+//                        finish();
+//                    }
+//
+//                }, R.string.dialog_negative, null);
+//    }
 
 
 
