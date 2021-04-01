@@ -43,8 +43,8 @@ public class DrawerLayoutAdapter extends BaseAdapter {
         if (convertView == null) {
             holder = new ViewHolder();
             convertView = LayoutInflater.from(mContext).inflate(R.layout.item_drawerlayout, null);
-            holder.img_icon = (ImageView) convertView.findViewById(R.id.img_icon);
-            holder.tv_text = (TextView) convertView.findViewById(R.id.tv_text);
+            holder.img_icon =  convertView.findViewById(R.id.img_icon);
+            holder.tv_text = convertView.findViewById(R.id.tv_text);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();

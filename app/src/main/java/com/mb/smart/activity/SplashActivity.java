@@ -4,6 +4,7 @@ package com.mb.smart.activity;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.WindowManager;
 
 import com.mb.smart.R;
@@ -28,7 +29,12 @@ public class SplashActivity extends Activity{
             Utils.StatusBarIconManager.MIUI(this, Utils.StatusBarIconManager.TYPE.BLACK);
             Utils.StatusBarIconManager.Flyme(this, Utils.StatusBarIconManager.TYPE.BLACK);
         }
-        NavigationHelper.startActivity(SplashActivity.this,MainActivity.class,null,true);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                NavigationHelper.startActivity(SplashActivity.this,MainActivity.class,null,true);
+            }
+        },1500);
 //        new Handler().postDelayed(new Runnable() {
 //            @Override
 //            public void run() {
