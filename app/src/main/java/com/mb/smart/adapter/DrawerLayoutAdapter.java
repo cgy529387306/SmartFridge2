@@ -49,7 +49,7 @@ public class DrawerLayoutAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        holder.img_icon.setBackgroundResource(dataList.get(position).getImg());
+        holder.img_icon.setImageResource(dataList.get(position).getImg());
         holder.tv_text.setText(dataList.get(position).getText());
         return convertView;
     }

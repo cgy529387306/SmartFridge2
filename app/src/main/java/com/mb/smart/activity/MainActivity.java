@@ -371,7 +371,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     private void initDrawerLayout(){
-        img = new int[]{R.mipmap.ic_launcher};
+        img = new int[]{R.mipmap.icon_logo1};
         text = new String[]{getResources().getString(R.string.aboutus)};
         for (int i = 0;i < img.length;i++) {
             list.add(new DrawerlayoutEntity(img[i],text[i]));
