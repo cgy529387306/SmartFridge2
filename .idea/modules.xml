@@ -3,7 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SmartFridge2.iml" filepath="$PROJECT_DIR$/SmartFridge2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.iml" filepath="$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FastBleLib/SmartFridge2.FastBleLib.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmartFridge2.app.unitTest.iml" />
     </modules>
   </component>
 </project>
