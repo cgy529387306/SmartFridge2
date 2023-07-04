@@ -150,15 +150,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 drawerLayout.closeDrawers();//点击子项的时候关闭侧滑栏
                 switch (position){
                     case 0:
-                        NavigationHelper.startActivity(MainActivity.this,AboutUsActivity.class,null,false);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("url","https://avestparts.jp/av-zq-manual/");
+                        bundle.putString("title",getString(R.string.aboutus));
+                        NavigationHelper.startActivity(MainActivity.this,BaseWebViewActivity.class,bundle,false);
                         break;
                     case 1:
                         NavigationHelper.openTM(MainActivity.this);
                         break;
                     case 2:
-                        Bundle bundle = new Bundle();
-                        bundle.putInt("type",1);
-                        NavigationHelper.startActivity(MainActivity.this,ForgetPwdActivity.class,bundle,false);
+                        Bundle bundle1 = new Bundle();
+                        bundle1.putInt("type",1);
+                        NavigationHelper.startActivity(MainActivity.this,ForgetPwdActivity.class,bundle1,false);
                         break;
                     case 3:
 //                        loginOut();
@@ -368,7 +371,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     private void initDrawerLayout(){
-        img = new int[]{R.mipmap.ic_about};
+        img = new int[]{R.mipmap.icon_logo1};
         text = new String[]{getResources().getString(R.string.aboutus)};
         for (int i = 0;i < img.length;i++) {
             list.add(new DrawerlayoutEntity(img[i],text[i]));
