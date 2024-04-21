@@ -28,12 +28,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mb.smart.activity.LoginActivity"/>
-        <activity android:name="com.mb.smart.activity.MainActivity"/>
-        <activity android:name="com.mb.smart.activity.RegisterActivity"/>
-        <activity android:name="com.mb.smart.activity.ForgetPwdActivity"/>
-        <activity android:name="com.mb.smart.activity.AboutUsActivity"/>
-        <activity android:name="com.mb.smart.activity.SmartFridgeActivity"/>
+        <activity android:name="com.mb.smart.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mb.smart.activity.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mb.smart.activity.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mb.smart.activity.ForgetPwdActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mb.smart.activity.AboutUsActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mb.smart.activity.SmartFridgeActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.mb.smart.activity.BaseWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
         <meta-data android:name="leancloud" android:value="LeanCloud"/>
     </application>
 

@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Smart车载冰箱</string>
     <string name="input_phone">输入手机号码</string>
     <string name="input_pwd">输入登录密码</string>
     <string name="login">登录</string>
@@ -22,41 +21,41 @@
     <string name="jd">TAWA\n京东旗舰店</string>
     <string name="logining">登录中...</string>
 
-    <string name="aboutus">关于我们</string>
-    <string name="about">TAWA 初创于德国，品牌囊括旅行(Travel) 、陪伴(Accompany) 、智慧(Wisdom) 、娱乐(Amusement)四重理念，旨在连接家庭、汽车，生活。
-        \n\n在为您提供德系高品质车品的同时，TAWA还为您和家人带来与自驾游相关的吃、住、行、玩所需装备一站式解决方案。\n \n快乐自驾，TAWA相伴。
+    <string name="app_name">AVEST</string>
+    <string name="aboutus">AV-ZQ / AV-SZQ WEB説明書</string>
+    <string name="about">AVEST車載冷蔵庫、自社の知恵を活かした車用冷蔵庫工場で開発された専属アプリです。成功はすべて一歩ずつ奮闘してきたのです。親愛なるあなた、あなたは寮、マンション、車で移動して、トラックを使っても、私達は精一杯あなたのためにもっと多く作ります。\n私たちは市場の高級品を普及させて市場の通需品にすることを志して、絶えず品質を高めると同時に、厚道の価格はかえって私達が絶えず目標の最低ラインを追求するのだと思います。私たちは皆さんといつまでも一緒に立って、一緒に楽しみのために頑張りましょう。  \n楽しみは一瞬であり、長い間でもある。AVEST車載冷蔵庫あそこにあります。
     </string>
-    <string name="search_vailable_device">搜索可用设备</string>
-    <string name="my_device">我的设备</string>
-    <string name="search_no_device">找不到可用设备</string>
-    <string name="sure_near">请确保您的冰箱已开机，并已将手机靠近冰箱!</string>
-    <string name="make_sure_open_device">请确保已打开手机蓝牙和冰箱!</string>
-    <string name="connect_error">连接已断开</string>
-    <string name="connected">已连接</string>
-    <string name="disconnet">未连接</string>
-    <string name="cancel_back">取消返回</string>
-    <string name="search_again">重新搜索</string>
-    <string name="add_device">+ 添加设备</string>
-    <string name="bluettooth_not_open">手机蓝牙未开启</string>
-    <string name="open_bluetooth">开启蓝牙</string>
-    <string name="current_temp">当前温度</string>
-    <string name="current_mode">当前模式</string>
-    <string name="device_battery_state">电池保护档</string>
-    <string name="dialog_positive">确 定</string>
-    <string name="dialog_negative">取 消</string>
-    <string name="more_back_exit">再按一次返回退出</string>
-    <string name="select_device">选择设备</string>
-    <string name="title_tawa">Smart智能车载冰箱</string>
-    <string name="setting_wd">设置温度：%1$d%2$s</string>
-    <string name="setting_dcdy">电池电压：%1$d.%2$d</string>
-    <string name="device_jn">节能</string>
-    <string name="device_qj">强劲</string>
-    <string name="device_m">中</string>
-    <string name="device_h">高</string>
-    <string name="device_low">低</string>
-    <string name="device_not_low">设置温度不能低于-13℉</string>
-    <string name="device_not_low_25">设置温度不能低于-25℃</string>
-    <string name="device_not_high_68">设置温度不能高于68℉</string>
-    <string name="device_not_high_20">设置温度不能高于20℃</string>
+    <string name="search_vailable_device">利用可能なデバイスを検索</string>
+    <string name="my_device">自分のデバイス</string>
+    <string name="search_no_device">利用可能なデバイスが見つかりませんでした</string>
+    <string name="sure_near">冷蔵庫が起動していることを確認してください。携帯を冷蔵庫に近づけました。</string>
+    <string name="make_sure_open_device">冷蔵庫が起動していることを確認してください。携帯を冷蔵庫に近づけました。</string>
+    <string name="connect_error">デバイスが接続を失う</string>
+    <string name="connected">接続済み</string>
+    <string name="disconnet">未接続</string>
+    <string name="cancel_back">戻る</string>
+    <string name="search_again">再検索</string>
+    <string name="add_device">+デバイスを追加</string>
+    <string name="bluettooth_not_open">システムのBluetoothはすでに閉じています。システムのBluetoothを開いてください。</string>
+    <string name="open_bluetooth">ブルートゥースを開く</string>
+    <string name="current_temp">庫内温度</string>
+    <string name="current_mode">現在のモード</string>
+    <string name="device_battery_state">バッテリー保護</string>
+    <string name="dialog_positive">を選択します</string>
+    <string name="dialog_negative">キャンセル</string>
+    <string name="more_back_exit">exit</string>
+    <string name="select_device">デバイスを選択</string>
+    <string name="title_tawa">AVEST車載冷蔵庫</string>
+    <string name="setting_wd">設定温度：%1$d%2$s</string>
+    <string name="setting_dcdy">バッテリ電圧：%1$d.%2$d</string>
+    <string name="device_jn">エコモード</string>
+    <string name="device_qj">急速冷凍モード</string>
+    <string name="device_m">H2（中）</string>
+    <string name="device_h">H3（高）</string>
+    <string name="device_low">H1（低）</string>
+    <string name="device_not_low">設定温度範囲は-13℉から68℉までです</string>
+    <string name="device_not_low_25">設定温度範囲は-25℃から20℃までです</string>
+    <string name="device_not_high_68">設定温度範囲は-13℉から68℉までです</string>
+    <string name="device_not_high_20">設定温度範囲は-25℃から20℃までです</string>
 
 </resources>
