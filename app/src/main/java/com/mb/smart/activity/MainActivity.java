@@ -233,7 +233,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 .setConnectOverTime(20000)
                 .setOperateTimeout(5000);
         BleScanRuleConfig scanRuleConfig = new BleScanRuleConfig.Builder()
-                .setDeviceName(true, "WaymanBleQX")   // 只扫描指定广播名的设备，可选
+                .setDeviceName(true, "WaymanBleQX", "WaymanBleQx")    // 只扫描指定广播名的设备，可选
                 .setAutoConnect(true)      // 连接时的autoConnect参数，可选，默认false
                 .setScanTimeOut(10000)              // 扫描超时时间，可选，默认10秒
                 .build();
